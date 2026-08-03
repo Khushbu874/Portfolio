@@ -33,7 +33,7 @@ export default function Skills() {
   return (
     <section id="skills" className="relative py-24 sm:py-36">
       <div className="absolute inset-0 grid-bg opacity-30" />
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="flex items-center gap-3 mb-4">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-400">02 — Skills</span>
@@ -41,7 +41,7 @@ export default function Skills() {
           </div>
         </Reveal>
 
-        <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] max-w-3xl text-balance">
+        <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] max-w-4xl text-balance">
           <RevealText text="A toolkit honed over" />{' '}
           <span className="gradient-text">
             <RevealText text="years of shipping" />
@@ -49,7 +49,7 @@ export default function Skills() {
           <RevealText text="." />
         </h2>
         <Reveal delay={0.15}>
-          <p className="mt-5 text-ink-400 text-lg max-w-2xl">
+          <p className="mt-5 text-ink-400 text-lg max-w-3xl">
             From low-fidelity sketches to production code, a full-stack design skill set for every project.
           </p>
         </Reveal>

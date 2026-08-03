@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Experience from '@/components/Experience';
+import Mentorships from '@/components/Mentorships';
 import Achievements from '@/components/Achievements';
 import Research from '@/components/Research';
 import Contact from '@/components/Contact';
@@ -38,6 +39,7 @@ export default function App() {
         <Skills />
         <Projects />
         <Experience />
+        <Mentorships />
         <Achievements />
         <Research />
         <Contact />

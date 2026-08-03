@@ -1,6 +1,7 @@
 import {
   Figma,
   Github,
+  Linkedin,
   Layout,
   Palette,
   PenTool,
@@ -13,31 +14,62 @@ import {
   Boxes,
   LineChart,
   Layers,
+  Brain,
+  Cpu,
+  GraduationCap,
+  Briefcase,
+  Award,
+  BookOpen,
+  FileText,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export const profile = {
-  name: 'Alex Rivera',
-  firstName: 'Alex',
-  initials: 'AR',
-  roles: ['Product Designer', 'Frontend Engineer', 'Design Systems Lead', 'Creative Technologist'],
-  location: 'San Francisco, CA',
-  email: 'hello@alexrivera.design',
+  name: 'Khushbu Dewangan',
+  firstName: 'Khushbu',
+  initials: 'KD',
+  roles: [
+    'Software Developer',
+    'AI & Machine Learning Specialist',
+    'NLP & RAG Engineer',
+    'Backend Developer',
+  ],
+  location: 'Raipur, Chhattisgarh, India',
+  email: 'khushbudewangan139@gmail.com',
+  phone: '9302474642',
   available: true,
-  avatar:
-    'https://images.pexels.com/photos/8483811/pexels-photo-8483811.jpeg?auto=compress&cs=tinysrgb&h=900&w=600',
+  avatar: '/avatar.png',
   summary:
-    'I design and build digital products that people actually want to use. For the past 8 years I have shaped interfaces, design systems, and frontend architectures for startups and global brands.',
+    'Computer Science graduate (B.Tech CGPA: 8.87/10) with strong expertise in Artificial Intelligence, NLP, and scalable backend systems. Experienced in building real-world AI applications using LLMs, RAG, and TensorFlow Lite, including research automation systems, intelligent chatbots, and real-time gesture recognition.',
   stats: [
-    { label: 'Years experience', value: '8+' },
-    { label: 'Projects shipped', value: '60+' },
-    { label: 'Happy clients', value: '30+' },
-    { label: 'Design awards', value: '4' },
+    { label: 'B.Tech CGPA', value: '8.87 / 10' },
+    { label: 'Projects Built', value: '5+' },
+    { label: 'Awards & Hackathons', value: '4+' },
+    { label: 'Research Papers', value: '1 Published' },
   ],
   social: [
-    { label: 'GitHub', href: 'https://github.com', icon: Github },
-    { label: 'Dribbble', href: 'https://dribbble.com', icon: Sparkles },
-    { label: 'Figma', href: 'https://figma.com', icon: Figma },
+    { label: 'GitHub', href: 'https://github.com/Khushbu874', icon: Github },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/khushbu-dewangan-a85540310/', icon: Linkedin },
+  ],
+  education: [
+    {
+      degree: 'B.Tech in Computer Science & Engineering',
+      institution: 'Shri Rawatpura Sarkar University, Raipur (C.G.)',
+      score: 'CGPA: 8.87 / 10',
+      period: 'Sep 2022 — 2026',
+    },
+    {
+      degree: 'Higher Secondary (12th)',
+      institution: 'Sun Rise Model School, Kurud, Dhamtari (C.G.)',
+      score: '71.4%',
+      period: 'Jun 2021 — May 2022',
+    },
+    {
+      degree: 'High School (10th)',
+      institution: 'Sun Rise Model School, Kurud, Dhamtari (C.G.)',
+      score: '84.83%',
+      period: 'Jun 2019 — May 2020',
+    },
   ],
 };
 
@@ -50,36 +82,38 @@ export type SkillCategory = {
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: 'Design',
-    icon: Palette,
-    blurb: 'Turning ambiguity into clear, usable, beautiful interfaces.',
+    title: 'AI & Machine Learning',
+    icon: Brain,
+    blurb: 'Building LLM pipelines, RAG systems, and on-device computer vision models.',
     skills: [
-      { name: 'UI / UX Design', level: 95 },
-      { name: 'Design Systems', level: 92 },
-      { name: 'Prototyping', level: 88 },
-      { name: 'Motion Design', level: 80 },
+      { name: 'Machine Learning & NLP', level: 92 },
+      { name: 'Large Language Models (LLMs)', level: 90 },
+      { name: 'Retrieval-Augmented Gen (RAG)', level: 88 },
+      { name: 'PyTorch & TensorFlow Lite', level: 85 },
+      { name: 'MediaPipe & Computer Vision', level: 85 },
     ],
   },
   {
-    title: 'Frontend Engineering',
+    title: 'Backend & System Architecture',
+    icon: Server,
+    blurb: 'Designing scalable APIs, vector searching, and clean object-oriented architecture.',
+    skills: [
+      { name: 'Python (FastAPI)', level: 94 },
+      { name: 'Java & OOP', level: 88 },
+      { name: 'ChromaDB (Vector DB)', level: 86 },
+      { name: 'MySQL & Firebase', level: 90 },
+      { name: 'REST APIs & Systems Design', level: 92 },
+    ],
+  },
+  {
+    title: 'Web & Mobile Engineering',
     icon: Code2,
-    blurb: 'Building fast, accessible, and resilient interfaces with modern tooling.',
+    blurb: 'Crafting responsive user interfaces and native mobile applications.',
     skills: [
-      { name: 'React / Next.js', level: 94 },
-      { name: 'TypeScript', level: 90 },
-      { name: 'Tailwind CSS', level: 96 },
-      { name: 'Web Performance', level: 85 },
-    ],
-  },
-  {
-    title: 'Creative Tech',
-    icon: Zap,
-    blurb: 'Where code meets craft — interactions, 3D, and generative work.',
-    skills: [
-      { name: 'Framer Motion', level: 88 },
-      { name: 'Three.js / WebGL', level: 75 },
-      { name: 'GSAP', level: 82 },
-      { name: 'Generative Art', level: 70 },
+      { name: 'Android SDK (Java, XML)', level: 88 },
+      { name: 'HTML5, CSS3 & JavaScript', level: 90 },
+      { name: 'Flutter Development', level: 80 },
+      { name: 'Git & GitHub Workflows', level: 92 },
     ],
   },
 ];
@@ -104,168 +138,124 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'Nimbus Analytics',
-    category: 'SaaS Dashboard',
-    year: '2024',
+    title: 'HYPOTH AI',
+    category: 'AI Research & RAG System',
+    year: '2026',
     description:
-      'A real-time analytics platform handling 2M+ events per day. I led the dashboard redesign that lifted daily active usage by 38%.',
-    image: 'https://images.pexels.com/photos/12969403/pexels-photo-12969403.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    tags: ['Product Design', 'React', 'Data Viz'],
+      'HYPOTH AI is an LLM-powered RAG research platform that parses academic PDFs and synthesizes interactive knowledge graphs to cut literature review time by over 90%.',
+    image: '/hypothai.png',
+    tags: ['Python', 'FastAPI', 'LLaMA-3', 'RAG', 'ChromaDB', 'vis.js', 'Firebase'],
     featured: true,
-    github: 'https://github.com/alexrivera',
-    demo: 'https://nimbus.example.com',
+    github: 'https://github.com/Khushbu874/HypothAI',
+    demo: 'https://hypothai.onrender.com/',
     problem:
-      'Operations teams were drowning in raw event streams with no way to spot anomalies before they snowballed into incidents.',
+      'Researchers and academics spend days manually reviewing dense literature to discover knowledge gaps and generate valid hypotheses.',
     solution:
-      'A real-time analytics suite with composable widgets, smart anomaly detection, and one-click shareable reports.',
-    challenges: 'Rendering 2M+ daily events at a steady 60fps without ever blocking the main thread.',
+      'An end-to-end LLM RAG engine that parses academic papers, builds interactive knowledge graphs, and synthesizes structured research hypotheses.',
+    challenges: 'Optimizing high-density PDF parsing and embedding retrieval with zero hallucination for academic citations.',
     results:
-      'Daily active usage rose 38%, and mean time to detect incidents dropped from hours to minutes.',
+      'Cut literature synthesis time by over 90% and deployed live on Render.',
     features: [
-      'Composable drag-and-drop widget grid',
-      'Real-time anomaly detection alerts',
-      'One-click shareable report snapshots',
-      'Dark, calm UI tuned for long sessions',
+      'Live deployed production RAG web platform',
+      'LLM-driven RAG pipeline for academic PDF processing',
+      'Interactive knowledge graph visualization using vis.js',
+      'FastAPI scalable backend with low-latency endpoints',
     ],
     metrics: [
-      { label: 'Daily active usage', value: '+38%' },
-      { label: 'Events / day', value: '2M+' },
-      { label: 'MTTD', value: '-87%' },
+      { label: 'Review Speedup', value: '10x Faster' },
+      { label: 'Live Deployment', value: 'Render' },
+      { label: 'Architecture', value: 'RAG + Graph' },
     ],
   },
   {
-    title: 'Wavelength Commerce',
-    category: 'E-commerce',
-    year: '2023',
+    title: 'OperandOS',
+    category: 'Autonomous AI ERP System',
+    year: '2026',
     description:
-      'Headless storefront for a lifestyle brand. Checkout flow rebuilt from the ground up — conversion rose 24% in the first quarter.',
-    image: 'https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940',
-    tags: ['UX', 'Next.js', 'Stripe'],
+      'OperandOS is an autonomous AI ERP platform using Groq LLaMA 3.3 70B for conversational business onboarding, real-time dynamic schema evolution, and multi-tenant management.',
+    image: '/operandos.png',
+    tags: ['FastAPI', 'React 19', 'Groq LLaMA-3.3 70B', 'MongoDB', 'TailwindCSS', 'PyJWT'],
     featured: true,
-    github: 'https://github.com/alexrivera',
-    demo: 'https://wavelength.example.com',
-    problem: 'A growing lifestyle brand was losing shoppers at a clunky, multi-page checkout.',
+    github: 'https://github.com/Khushbu874/OperandOS',
+    demo: 'https://operandos.onrender.com/',
+    problem:
+      'Traditional ERP software requires rigid schemas and long manual setup processes tailored for complex business structures.',
     solution:
-      'A headless storefront with a single-page checkout, instant search, and personalized recommendations.',
-    challenges: 'Keeping the storefront fast under flash-sale traffic spikes of 10x normal load.',
-    results: 'Checkout conversion climbed 24% in the first quarter; bounce rate fell 31%.',
+      'An autonomous ERP system conducting AI business interviews using LLaMA 3.3 70B to automatically synthesize, evolve, and manage multi-tenant dynamic schemas.',
+    challenges: 'Handling real-time schema evolution and multi-tenant isolation without breaking existing business data records.',
+    results:
+      'Automated end-to-end business onboarding and dynamic schema generation in real-time.',
     features: [
-      'Single-page accelerated checkout',
-      'Instant search with live suggestions',
-      'Personalized product recommendations',
-      'Flash-sale ready headless storefront',
+      'Live deployed autonomous operations & ERP platform',
+      'Automated AI Business Interview Agent powered by Groq LLaMA 3.3 70B',
+      'Dynamic ERP schema generation and evolution via natural language',
+      'Multi-tenant dynamic CRUD record management and analytics',
     ],
     metrics: [
-      { label: 'Conversion', value: '+24%' },
-      { label: 'Bounce rate', value: '-31%' },
-      { label: 'Page speed', value: '0.9s' },
+      { label: 'Live Deployment', value: 'Render' },
+      { label: 'AI Model', value: 'LLaMA 3.3 70B' },
+      { label: 'Backend', value: 'FastAPI + Mongo' },
     ],
   },
   {
-    title: 'Pulse Health',
-    category: 'Mobile App',
-    year: '2023',
+    title: 'SILENT TALK AI',
+    category: '3D Avatar & Sign AI Architecture',
+    year: '2025',
     description:
-      'A patient-facing health companion app. Designed the full flow from onboarding through daily check-ins across iOS and Android.',
-    image: 'https://images.pexels.com/photos/6406691/pexels-photo-6406691.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    tags: ['Mobile', 'Design System', 'Prototyping'],
-    github: 'https://github.com/alexrivera',
-    demo: 'https://pulse.example.com',
-    problem: 'Patients struggled to keep up with care plans between appointments.',
+      'SILENT TALK AI is a 3-module 3D Sign Language HCI platform: Learn (3D avatar simulations), Convert (Text/Voice to 3D signs via ChromaDB <50ms cache & gpt-4o-mini), and Recognize (Webcam sign-to-voice via MediaPipe & TFLite).',
+    image: '/silenttalk_robot.png',
+    tags: ['FastAPI', 'Three.js', 'MediaPipe JS', 'TensorFlow Lite', 'ChromaDB', 'OpenAI gpt-4o-mini', 'Gemini NLP', 'Web Speech API'],
+    featured: true,
+    github: 'https://github.com/Khushbu874/SilentTalk',
+    demo: '',
+    problem:
+      'Communication barriers between sign language users and non-signers due to lack of accessible bidirectional sign recognition, 3D gesture translation, and interactive learning tools.',
     solution:
-      'A friendly companion app with daily check-ins, reminders, and a clean timeline of progress.',
-    challenges: 'Designing an accessible experience for users aged 18 to 80 on both iOS and Android.',
-    results: '90% of pilot users completed daily check-ins; medication adherence improved 27%.',
+      'A 3-module system: (1) Learn Page with 3D GLTF avatar simulations, (2) Convert Page with Speech API, ChromaDB vector caching (<50ms HIT), and gpt-4o-mini joint generation, (3) Recognize Page with webcam MediaPipe 3D bone tracking, TFLite offline inference, Gemini NLP sentence synthesis, and Web Speech TTS.',
+    challenges: 'Achieving sub-50ms vector similarity cache lookups for 3D bone joint coordinates and running real-time hand-tracking TFLite inference in the browser.',
+    results:
+      'Achieved ≥95% vector cache match precision, sub-50ms 3D avatar joint rendering, and end-to-end bidirectional sign-to-voice communication.',
     features: [
-      'Guided daily check-in flow',
-      'Smart reminders and care-plan timeline',
-      'Accessibility-first large-touch UI',
-      'Progress streaks and gentle nudges',
+      'Interactive ISL Learn Page with 3D avatar GLTF bone simulations (Three.js)',
+      'Text/Voice to 3D Sign Generation with ChromaDB vector cache (<50ms HIT) & gpt-4o-mini fallback',
+      'Webcam Sign-to-Voice Speech via MediaPipe JS 3D bone tracking & TFLite local inference',
+      'Gemini / T5 NLP sentence synthesis converting raw gesture keywords into fluent spoken English',
+      'Unified Async FastAPI Gateway (Port 5000) managing concurrent sign generation & recognition routers',
     ],
     metrics: [
-      { label: 'Check-in rate', value: '90%' },
-      { label: 'Adherence', value: '+27%' },
-      { label: 'App rating', value: '4.8' },
+      { label: 'Cache Lookup', value: '<50ms' },
+      { label: 'Cache Precision', value: '≥95%' },
+      { label: 'Architecture', value: '3 Modules + FastAPI' },
     ],
   },
   {
-    title: 'Atlas Design System',
-    category: 'Design System',
-    year: '2022',
+    title: 'CAMPUSCARE AI',
+    category: 'Android & Smart Campus AI',
+    year: '2025',
     description:
-      'A unified component library and documentation portal adopted by 40+ engineers across three product teams.',
-    image: 'https://images.pexels.com/photos/106344/pexels-photo-106344.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    tags: ['Design System', 'Storybook', 'Tokens'],
-    github: 'https://github.com/alexrivera',
-    demo: 'https://atlas.example.com',
-    problem: 'Three product teams were shipping inconsistent UIs and duplicating component work.',
-    solution: 'A unified component library, token pipeline, and living documentation portal.',
-    challenges: 'Getting buy-in across teams with different stacks and release cadences.',
-    results: 'Adopted by 40+ engineers; UI bugs dropped 42% and new screens shipped 2x faster.',
-    features: [
-      'Token-driven theming pipeline',
-      'Living component documentation portal',
-      'Automated visual regression testing',
-      'Cross-framework adoption guides',
-    ],
-    metrics: [
-      { label: 'Engineers', value: '40+' },
-      { label: 'UI bugs', value: '-42%' },
-      { label: 'Ship speed', value: '2x' },
-    ],
-  },
-  {
-    title: 'Vertex Trading',
-    category: 'Fintech',
-    year: '2022',
-    description:
-      'A pro-grade trading interface with customizable workspaces and real-time market visualization for a Series B fintech.',
-    image: 'https://images.pexels.com/photos/97080/pexels-photo-97080.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    tags: ['Fintech', 'Data Viz', 'React'],
-    github: 'https://github.com/alexrivera',
-    demo: 'https://vertex.example.com',
-    problem: 'Traders were juggling five disconnected tools to read the markets.',
+      'CAMPUSCARE AI is a smart Android application for campus complaint management, featuring multimodal reporting (photo, voice, text) and automated Groq LLaMA-3 ticket triage.',
+    image: '/campuscare.png',
+    tags: ['Java', 'Android SDK', 'XML', 'Firebase', 'Groq LLaMA-3 API'],
+    featured: true,
+    github: 'https://github.com/Khushbu874',
+    demo: '',
+    problem:
+      'Slow, paper-based or unorganized ticket resolution for campus infrastructure issues and student complaints.',
     solution:
-      'A pro-grade trading workspace with customizable layouts and real-time market visualization.',
-    challenges: 'Displaying live order-book data with sub-100ms perceived latency.',
-    results: 'Onboarded 1,200 power users in the first month; daily session time grew 35%.',
+      'A mobile app enabling multimodal reporting (text, photo, audio) integrated with Groq LLaMA-3 for automated triage and response.',
+    challenges: 'Automating issue urgency scoring and routing complaints instantly to administrative departments.',
+    results:
+      'Automated over 80% of issue category sorting and drastically reduced incident response turnarounds.',
     features: [
-      'Drag-to-arrange customizable workspaces',
-      'Live order-book visualization',
-      'Sub-100ms perceived-latency rendering',
-      'Keyboard-first power-user shortcuts',
+      'Multimodal complaint submission (Photo, Voice, Text)',
+      'Automated classification and response via Groq LLaMA-3 API',
+      'Real-time status tracking with Firebase Cloud Firestore',
+      'Role-based access control for students and administrators',
     ],
     metrics: [
-      { label: 'Power users', value: '1.2K' },
-      { label: 'Session time', value: '+35%' },
-      { label: 'Latency', value: '<100ms' },
-    ],
-  },
-  {
-    title: 'Bloom Marketplace',
-    category: 'Marketplace',
-    year: '2021',
-    description:
-      'A two-sided marketplace for independent makers. Built the seller onboarding flow and trust-and-safety review tools.',
-    image: 'https://images.pexels.com/photos/5632391/pexels-photo-5632391.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    tags: ['Marketplace', 'UX Research', 'Frontend'],
-    github: 'https://github.com/alexrivera',
-    demo: 'https://bloom.example.com',
-    problem: 'Independent makers had no trusted place to reach buyers directly.',
-    solution:
-      'A two-sided marketplace with guided seller onboarding and trust-and-safety review tools.',
-    challenges: 'Balancing seller friction with the safety checks buyers expected.',
-    results: '5,000 sellers onboarded in six months; dispute rate held under 0.4%.',
-    features: [
-      'Guided seller onboarding wizard',
-      'Trust-and-safety review dashboard',
-      'Buyer protection and escrow flow',
-      'Ratings and review moderation tools',
-    ],
-    metrics: [
-      { label: 'Sellers', value: '5K' },
-      { label: 'Disputes', value: '<0.4%' },
-      { label: 'GMV / mo', value: '$1.2M' },
+      { label: 'Auto-Classification', value: '80%+' },
+      { label: 'Response Time', value: 'Instant' },
+      { label: 'Platform', value: 'Android SDK' },
     ],
   },
 ];
@@ -281,57 +271,111 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: 'Senior Product Designer',
-    company: 'Helix Labs',
-    period: '2022 — Present',
-    description: 'Leading design for the flagship analytics suite and the in-house design system.',
+    role: 'Software Developer',
+    company: 'Trinity Solutions, Raipur (C.G.)',
+    period: 'Apr 2026 — Present',
+    description: 'Contributing to real-time software projects by developing, testing, and maintaining scalable and efficient solutions.',
     highlights: [
-      'Shipped Nimbus Analytics 2.0, growing weekly active users 38%',
-      'Built Atlas design system adopted across 3 product teams',
-      'Mentored 4 designers and established the design review process',
-    ],
-    icon: LineChart,
-  },
-  {
-    role: 'Frontend Engineer',
-    company: 'Northwind Studio',
-    period: '2019 — 2022',
-    description: 'Built production React apps for client engagements across fintech and commerce.',
-    highlights: [
-      'Led frontend for 6 client projects from kickoff to launch',
-      'Introduced a shared component starter that cut kickoff time by 30%',
-      'Championed accessibility audits resulting in 95+ Lighthouse scores',
+      'Developing production-grade software applications and optimizing backend architecture',
+      'Ensuring high code quality through modular testing, refactoring, and peer reviews',
+      'Collaborating with cross-functional teams to deliver scalable software solutions',
     ],
     icon: Code2,
   },
   {
-    role: 'UI Designer',
-    company: 'Brightwave Agency',
-    period: '2017 — 2019',
-    description: 'Designed marketing sites and product interfaces for early-stage startups.',
+    role: 'Software Development Intern',
+    company: 'Trinity Solutions, Raipur (C.G.)',
+    period: 'Jan 2026 — Mar 2026',
+    description: 'Worked on software development, backend module testing, and system enhancements prior to transitioning into full-time Software Developer role.',
     highlights: [
-      'Delivered 20+ landing pages with conversion-focused design',
-      'Created brand systems for 8 startup clients',
-      'Collaborated with engineers to ensure pixel-perfect handoff',
+      'Assisted in building and optimizing core backend features and API integrations',
+      'Participated in code reviews, bug fixes, and unit test execution for real-world software applications',
+      'Collaborated closely with senior developers to adopt production engineering best practices',
     ],
-    icon: Layout,
+    icon: Code2,
+  },
+  {
+    role: 'President - Developers Club',
+    company: 'Shri Rawatpura Sarkar University, Raipur (C.G.)',
+    period: 'Jun 2025 — Mar 2026',
+    description: 'Led and mentored 40+ members, managed technical projects, and organized tech events.',
+    highlights: [
+      'Led technical initiatives and mentored over 40+ student developers',
+      'Successfully organized and hosted a Google Developer Groups (GDG) event on campus',
+      'Won First Prize in Idea Execution (2026) for outstanding project execution and leadership',
+    ],
+    icon: Briefcase,
+  },
+  {
+    role: 'Artificial Intelligence Intern',
+    company: 'Edunet Foundation (IBM SkillsBuild & AICTE)',
+    period: 'Aug 2025 — Sep 2025',
+    description: 'Gained hands-on experience developing ML models and building data preprocessing pipelines.',
+    highlights: [
+      'Developed data preprocessing and feature engineering pipelines using real-world datasets',
+      'Trained and evaluated machine learning models using IBM SkillsBuild platform',
+      'Earned official certification under the AICTE internship program',
+    ],
+    icon: Sparkles,
+  },
+  {
+    role: 'Python Development Intern',
+    company: 'Octanet Services Pvt. Ltd',
+    period: 'Jan 2025 — Feb 2025',
+    description: 'Strengthened core Python skills, object-oriented programming (OOP), and algorithmic problem solving.',
+    highlights: [
+      'Designed modular Python scripts using OOP concepts and design patterns',
+      'Implemented clean algorithmic solutions for data manipulation tasks',
+      'Enhanced software development practices and version control workflows',
+    ],
+    icon: Terminal,
+  },
+];
+
+export type Mentorship = {
+  title: string;
+  organization: string;
+  period: string;
+  description: string;
+  skills: string[];
+  icon: LucideIcon;
+};
+
+export const mentorships: Mentorship[] = [
+  {
+    title: 'Girls In Engineering Mentorship & Self Development Program',
+    organization: 'ACCENTURE',
+    period: 'Aug 2024 – Jan 2025',
+    description:
+      'Selected for Accenture mentorship, gaining practical exposure to Core Java and OOP concepts through professional guidance.',
+    skills: ['Core Java', 'OOP Concepts', 'Professional Guidance', 'Self Development'],
+    icon: Award,
+  },
+  {
+    title: 'Minimal Viable Product Mentorship',
+    organization: 'HACK4PURPOSE',
+    period: 'Aug 2024 – Nov 2024',
+    description:
+      'Enhanced understanding of MVP development, product planning, and problem solving under expert mentorship.',
+    skills: ['MVP Development', 'Product Planning', 'Problem Solving', 'Expert Mentorship'],
+    icon: BookOpen,
   },
 ];
 
 export const services = [
-  { title: 'Product Design', icon: PenTool, desc: 'End-to-end product thinking — from research to pixel-perfect UI.' },
-  { title: 'Frontend Development', icon: Code2, desc: 'Production-grade React apps that are fast, accessible, and maintainable.' },
-  { title: 'Design Systems', icon: Boxes, desc: 'Scalable component libraries and token-driven design infrastructure.' },
-  { title: 'Creative Direction', icon: Layers, desc: 'Brand-aligned visual language and motion that makes products feel alive.' },
+  { title: 'AI & ML Solutions', icon: Brain, desc: 'Custom LLM pipelines, RAG systems, and computer vision models tailored for production.' },
+  { title: 'Backend Development', icon: Server, desc: 'High-performance REST APIs built with Python, FastAPI, and robust database architectures.' },
+  { title: 'Mobile App Development', icon: Smartphone, desc: 'Native Android applications with smart AI feature integration and responsive UIs.' },
+  { title: 'Technical Leadership', icon: Layers, desc: 'Leading developer teams, mentoring talent, and orchestrating tech community events.' },
 ];
 
 export const tools = [
-  { name: 'Figma', icon: Figma },
-  { name: 'React', icon: Code2 },
-  { name: 'TypeScript', icon: Terminal },
-  { name: 'Tailwind', icon: Sparkles },
-  { name: 'Next.js', icon: Server },
-  { name: 'Framer', icon: Smartphone },
+  { name: 'Python', icon: Terminal },
+  { name: 'FastAPI', icon: Server },
+  { name: 'Java', icon: Code2 },
+  { name: 'PyTorch / TF', icon: Brain },
+  { name: 'Android SDK', icon: Smartphone },
+  { name: 'Firebase', icon: Sparkles },
 ];
 
 export type Achievement = {
@@ -342,10 +386,11 @@ export type Achievement = {
 };
 
 export const achievements: Achievement[] = [
-  { year: '2024', title: 'Site of the Day', category: 'Design Excellence', org: 'Awwwards' },
-  { year: '2023', title: 'Best UI Innovation', category: 'Innovation', org: 'CSS Design Awards' },
-  { year: '2023', title: 'Framer Showcase', category: 'Motion Design', org: 'Framer' },
-  { year: '2022', title: 'Webby Honoree', category: 'Best Portfolio', org: 'The Webby Awards' },
+  { year: '2026', title: 'First Prize in Idea Execution', category: 'Innovation & Execution', org: 'Developers Club, Shri Rawatpura Sarkar University Raipur (SRU)' },
+  { year: '2025', title: 'Runner-Up & Domain Winner', category: 'Hackathon', org: 'Algostrom 1.0 Hackathon' },
+  { year: '2025', title: 'Published Research Paper', category: 'AI & BCI Research', org: 'IJSREM Journal (NeuroNav)' },
+  { year: '2025', title: 'Second Prize in Tech Quiz', category: 'Technical Competition', org: 'Dept of CSE, Shri Rawatpura Sarkar University Raipur (SRU)' },
+  { year: '2024', title: 'Special Award', category: 'Hackathon Innovation', org: 'Hack4Purpose Hackathon' },
 ];
 
 export type Research = {
@@ -360,57 +405,13 @@ export type Research = {
 
 export const research: Research[] = [
   {
-    type: 'Case Study',
-    year: '2024',
-    title: 'Designing for Real-Time Data Density',
-    summary: 'How we built a dashboard that makes 2M daily events feel calm instead of chaotic.',
-    meta: '12 min read',
-    tags: ['Data Viz', 'UX'],
-    href: '#',
-  },
-  {
-    type: 'Talk',
-    year: '2023',
-    title: 'The Component Is the Canvas',
-    summary: 'A talk on treating component libraries as a medium for creative expression.',
-    meta: 'Config 2023',
-    tags: ['Design Systems'],
-    href: '#',
-  },
-  {
-    type: 'Article',
-    year: '2023',
-    title: 'Tokens Beyond Design Systems',
-    summary: 'Why design tokens should power documentation, marketing, and code alike.',
-    meta: '8 min read',
-    tags: ['Design Systems', 'Engineering'],
-    href: '#',
-  },
-  {
-    type: 'Research',
-    year: '2022',
-    title: 'Trust Patterns in Fintech Onboarding',
-    summary: 'A field study of what makes new users feel safe during financial onboarding.',
-    meta: '15 min read',
-    tags: ['Fintech', 'Research'],
-    href: '#',
-  },
-  {
-    type: 'Talk',
-    year: '2022',
-    title: 'Motion as Meaning',
-    summary: 'On using animation to communicate state, hierarchy, and causality.',
-    meta: 'Awwwards Conf',
-    tags: ['Motion'],
-    href: '#',
-  },
-  {
-    type: 'Article',
-    year: '2021',
-    title: 'Performance Is a Design Problem',
-    summary: 'Why load times belong in the design brief, not just the engineering backlog.',
-    meta: '6 min read',
-    tags: ['Performance'],
-    href: '#',
+    type: 'Journal Publication',
+    year: '2025',
+    title: 'NeuroNav: Brainwave Controlled Smart Assistant',
+    summary:
+      'Published research paper proposing a low-cost, brainwave-inspired Human-Computer Interface (HCI). It captures physiological and neuromuscular signals via EMG & pulse sensors, processed through Arduino hardware and machine learning models (Random Forest, SVM, and CNN) for accessible hands-free smart assistant control.',
+    meta: 'International Journal of Scientific Research in Engineering and Management (IJSREM) · Vol 09, Issue 11',
+    tags: ['BCI / HCI', 'Signal Processing', 'EMG & Pulse AI', 'Random Forest & CNN', 'IJSREM'],
+    href: 'https://www.researchgate.net/publication/397458645_NeuroNav_Brainwave_Controlled_Smart_Assistant',
   },
 ];

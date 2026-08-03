@@ -1,3 +1,3 @@
-# Portfolio
+# Khushbu Dewangan — Portfolio
 
-[![Open in Bolt](https://bolt.new/static/open-in-bolt.svg)](https://bolt.new/~/sb1-ue5vrybo)
+Modern, responsive developer portfolio showcasing projects, experience, research, and skills built with React, TypeScript, Tailwind CSS, and Framer Motion.

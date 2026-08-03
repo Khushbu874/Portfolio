@@ -7,15 +7,15 @@ export default function Achievements() {
   return (
     <section id="achievements" className="relative py-24 sm:py-36">
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 h-72 w-[50rem] rounded-full bg-brand-500/8 blur-[120px]" />
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-400">05 — Recognition</span>
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-400">06 — Recognition</span>
             <span className="h-px w-12 bg-gradient-to-r from-brand-400/50 to-transparent" />
           </div>
         </Reveal>
 
-        <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] max-w-2xl text-balance">
+        <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] max-w-3xl text-balance">
           <RevealText text="Awards &" />{' '}
           <span className="gradient-text">
             <RevealText text="recognition" />

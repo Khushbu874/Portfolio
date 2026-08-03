@@ -5,12 +5,12 @@ import { profile, services } from '@/data/content';
 import Reveal, { RevealText } from '@/components/Reveal';
 
 const checklist = [
-  'End-to-end product ownership',
-  'Accessibility-first design',
-  'Design tokens & systems',
-  'Performance budgets',
-  'Prototyping in code',
-  'Cross-team collaboration',
+  'AI & LLM Integration (RAG Engine)',
+  'Scalable Backend Architecture (FastAPI)',
+  'Real-Time Computer Vision & Motion AI',
+  'Native Android SDK (Java/XML)',
+  'Clean Object-Oriented Code & Systems Design',
+  'Tech Leadership & Event Management (GDG)',
 ];
 
 export default function About() {
@@ -24,7 +24,7 @@ export default function About() {
 
   return (
     <section ref={sectionRef} id="about" className="relative py-24 sm:py-36">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="flex items-center gap-3 mb-4">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-400">01 — About</span>
@@ -46,25 +46,24 @@ export default function About() {
               <RevealText text="." />
             </h2>
 
-            <div className="mt-7 space-y-5 text-ink-300 leading-relaxed text-lg max-w-xl">
+            <div className="mt-7 space-y-5 text-ink-300 leading-relaxed text-lg max-w-3xl">
               <Reveal delay={0.1}>
                 <p>
-                  I'm a product designer and frontend engineer based in {profile.location}. Over the past
-                  eight years I've helped startups and established teams ship products that are as
-                  delightful to use as they are robust to maintain.
+                  I'm a Software Developer and AI &amp; Backend Engineer based in {profile.location}.
+                  Holding a B.Tech in Computer Science &amp; Engineering with an 8.87 CGPA, I specialize
+                  in building production-ready AI applications, LLM pipelines, and scalable APIs.
                 </p>
               </Reveal>
               <Reveal delay={0.2}>
                 <p>
-                  My approach is simple: understand the problem deeply, design with real users in mind,
-                  and build it so it lasts. I care about the details that most people never notice — the
-                  timing of an animation, the contrast of a label, the weight of a font — because those
-                  details are what make a product feel crafted.
+                  My focus is on solving real-world challenges through intelligent systems — whether it's
+                  reducing academic literature review from days to minutes using RAG pipelines, enabling
+                  real-time gesture translation with on-device computer vision, or architecting high-performance backends.
                 </p>
               </Reveal>
             </div>
 
-            <div className="mt-8 grid sm:grid-cols-2 gap-3 max-w-lg">
+            <div className="mt-8 grid sm:grid-cols-2 gap-3 max-w-2xl">
               {checklist.map((item, i) => (
                 <Reveal key={item} delay={0.3 + i * 0.08}>
                   <motion.div

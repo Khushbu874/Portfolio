@@ -56,7 +56,7 @@ export default function Experience() {
   return (
     <section id="experience" className="relative py-24 sm:py-36">
       <div className="absolute inset-0 grid-bg opacity-30" />
-      <div className="relative mx-auto max-w-5xl px-4 sm:px-6">
+      <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="flex items-center gap-3 mb-4">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-400">04 — Journey</span>
@@ -64,7 +64,7 @@ export default function Experience() {
           </div>
         </Reveal>
 
-        <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] max-w-2xl text-balance">
+        <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.05] max-w-3xl text-balance">
           <RevealText text="Where I've" />{' '}
           <span className="gradient-text">
             <RevealText text="made an impact" />

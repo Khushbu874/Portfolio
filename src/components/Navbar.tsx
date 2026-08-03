@@ -10,6 +10,7 @@ const navItems = [
   { id: 'skills', label: 'Skills' },
   { id: 'work', label: 'Work' },
   { id: 'experience', label: 'Journey' },
+  { id: 'mentorships', label: 'Mentorships' },
   { id: 'research', label: 'Research' },
   { id: 'contact', label: 'Contact' },
 ];
@@ -34,7 +35,7 @@ export default function Navbar() {
         className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 pt-4"
       >
         <nav
-          className={`flex w-full max-w-5xl items-center justify-between gap-4 rounded-full px-3 sm:px-4 transition-all duration-500 ${
+          className={`flex w-full max-w-[1600px] items-center justify-between gap-4 rounded-full px-4 sm:px-6 transition-all duration-500 ${
             scrolled
               ? 'glass-strong py-2.5 shadow-2xl shadow-black/40'
               : 'bg-transparent py-3'

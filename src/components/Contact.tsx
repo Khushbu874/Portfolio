@@ -15,10 +15,43 @@ export default function Contact() {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
     setStatus('loading');
-    await new Promise((r) => setTimeout(r, 1100));
-    setStatus('success');
+
+    const mailtoUrl = `mailto:${profile.email}?subject=${encodeURIComponent(
+      `Portfolio Inquiry from ${form.name}`
+    )}&body=${encodeURIComponent(
+      `Hi Khushbu,\n\n${form.message}\n\n---\nSender Name: ${form.name}\nSender Email: ${form.email}`
+    )}`;
+
+    try {
+      const res = await fetch(`https://formsubmit.co/ajax/${profile.email}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          _replyto: form.email,
+          message: form.message,
+          _subject: `New Portfolio Inquiry from ${form.name}`,
+          _captcha: 'false',
+        }),
+      });
+
+      if (res.ok) {
+        setStatus('success');
+      } else {
+        window.location.href = mailtoUrl;
+        setStatus('success');
+      }
+    } catch {
+      window.location.href = mailtoUrl;
+      setStatus('success');
+    }
+
     setForm({ name: '', email: '', message: '' });
-    setTimeout(() => setStatus('idle'), 4000);
+    setTimeout(() => setStatus('idle'), 6000);
   };
 
   const field =
@@ -27,7 +60,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative py-24 sm:py-36">
       <div className="absolute -bottom-40 left-1/2 -translate-x-1/2 h-96 w-[60rem] rounded-full bg-brand-500/10 blur-[150px]" />
-      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="relative mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="flex items-center gap-3 mb-4">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-brand-400">07 — Contact</span>
@@ -45,7 +78,7 @@ export default function Contact() {
               <RevealText text="." />
             </h2>
             <Reveal delay={0.1}>
-              <p className="mt-6 text-ink-300 text-lg leading-relaxed max-w-md">
+              <p className="mt-6 text-ink-300 text-lg leading-relaxed max-w-lg">
                 Have a project in mind, or just want to say hello? I'm always open to discussing new
                 ideas and opportunities.
               </p>
