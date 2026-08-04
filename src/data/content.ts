@@ -38,7 +38,7 @@ export const profile = {
   email: 'khushbudewangan139@gmail.com',
   phone: '9302474642',
   available: true,
-  avatar: '/avatar.png',
+  avatar: '/avatar.jpeg',
   summary:
     'Computer Science graduate (B.Tech CGPA: 8.87/10) with strong expertise in Artificial Intelligence, NLP, and scalable backend systems. Experienced in building real-world AI applications using LLMs, RAG, and TensorFlow Lite, including research automation systems, intelligent chatbots, and real-time gesture recognition.',
   stats: [
@@ -195,6 +195,36 @@ export const projects: Project[] = [
       { label: 'Live Deployment', value: 'Render' },
       { label: 'AI Model', value: 'LLaMA 3.3 70B' },
       { label: 'Backend', value: 'FastAPI + Mongo' },
+    ],
+  },
+  {
+    title: 'RM ADS MAKER',
+    category: 'Android App & Marketing Creator',
+    year: '2026',
+    description:
+      'RM Ads Maker is a published Android application on Google Play Store for creating professional posters, promotional banners, and customized marketing graphics effortlessly.',
+    image: '/rm_ads_maker.png',
+    tags: ['Android SDK', 'Java', 'XML', 'Google Play', 'Graphic Design Engine'],
+    featured: true,
+    github: 'https://github.com/Khushbu874/RMAdsMaker',
+    demo: 'https://play.google.com/store/apps/details?id=com.rmads.maker&pli=1',
+    problem:
+      'Small businesses and content creators often lack simple mobile-first tools to build high-impact poster ads and promotional graphics on the go.',
+    solution:
+      'A dedicated Android app providing customizable templates, quick text & overlay editing, and instant high-resolution export for marketing campaigns.',
+    challenges: 'Optimizing dynamic layout rendering, memory-efficient graphic composition, and responsive canvas controls across diverse Android devices.',
+    results:
+      'Live published app on Google Play Store providing an accessible mobile platform for instant ad poster creation.',
+    features: [
+      'Published live application on Google Play Store',
+      'Intuitive mobile template editor for poster & ad creation',
+      'Rich typography, background styling, stickers, and graphic overlay tools',
+      'High-resolution export for social media marketing and printing',
+    ],
+    metrics: [
+      { label: 'Store Status', value: 'Live on Play Store' },
+      { label: 'Platform', value: 'Android SDK' },
+      { label: 'Primary Use', value: 'Ad & Banner Design' },
     ],
   },
   {
